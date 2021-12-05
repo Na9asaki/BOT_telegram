@@ -1,9 +1,8 @@
 package startcoder;
 
-import java.io.IOException;
 
 public class Run {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args){
         new Bot().serve();
     }
 }
