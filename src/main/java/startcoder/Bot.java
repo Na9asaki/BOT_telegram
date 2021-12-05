@@ -117,11 +117,10 @@ public class Bot {
     }
 
     private void handleMessage(Message msg) {
+        System.out.println(msg.text());
         switch (msg.text()) {
-            case "/wheather":
-                wheather(msg);
-            case "/start":
-                bot.execute(new SendMessage(msg.chat().id(), "Привет! Я сделан на Java! Могу рассказать прогноз погоды"));
+            case "/wheather" -> wheather(msg);
+            case "/start" -> bot.execute(new SendMessage(msg.chat().id(), "Привет! Я сделан на Java! Могу рассказать прогноз погоды"));
         }
     }
 }
